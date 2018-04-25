@@ -1,0 +1,67 @@
+.spotlight {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background: black;
+  z-index: 15;
+  pointer-events: none;
+
+  transition: opacity 1s;
+  opacity: 0;
+}
+.spotlight.enabled {
+  opacity: 1;
+}
+.spotlight .spotlight-dimmer {
+  background: black;
+  width: 200vw;
+  height: 200vh;
+  position: absolute;
+}
+.spotlight-dimmer-left {
+  right: 200px;
+  top: -50vh;
+}
+.spotlight-dimmer-top {
+  bottom: 200px;
+  left: -100vw;
+}
+.spotlight-dimmer-bottom {
+  top: 200px;
+  left: -50vh;
+}
+.spotlight-dimmer-right {
+  left: 200px;
+  top: -50vh;
+}
+.spotlight .spotlight-blur {
+  position: absolute;
+}
+.spotlight-blur-top {
+  bottom: 100px;
+  left: -200px;
+  width: 400px;
+  height: 100px;
+  background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%);
+}
+.spotlight-blur-bottom {
+  top: 100px;
+  left: -200px;
+  width: 400px;
+  height: 100px;
+  background: linear-gradient(to top, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%);
+}
+.spotlight-blur-right {
+  left: 100px;
+  top: -200px;
+  width: 100px;
+  height: 400px;
+  background: linear-gradient(to left, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%);
+}
+.spotlight-blur-left {
+  right: 100px;
+  top: -200px;
+  width: 100px;
+  height: 400px;
+  background: linear-gradient(to right, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%);
+}

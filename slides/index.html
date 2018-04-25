@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Not familiar with Elixir? Let me do a simple intro in 30 minutes</title>
+
+    <link rel="stylesheet" href="deps/reveal.css">
+    <link rel="stylesheet" href="deps/black.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="deps/xcode.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'deps/pdf.css' : 'deps/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-markdown="slides.md"
+         data-separator="---"
+         data-separator-notes="^Note:"
+         data-charset="utf-8">
+        </section>
+      </div>
+    </div>
+
+    <div id="spotlight" class="spotlight">
+      <div class="spotlight-dimmer spotlight-dimmer-left"></div>
+      <div class="spotlight-dimmer spotlight-dimmer-top"></div>
+      <div class="spotlight-dimmer spotlight-dimmer-bottom"></div>
+      <div class="spotlight-dimmer spotlight-dimmer-right"></div>
+      <div class="spotlight-blur spotlight-blur-left"></div>
+      <div class="spotlight-blur spotlight-blur-top"></div>
+      <div class="spotlight-blur spotlight-blur-bottom"></div>
+      <div class="spotlight-blur spotlight-blur-right"></div>
+    </div>
+    <link rel="stylesheet" href="lib/spotlight.css">
+
+    <script src="deps/head.min.js"></script>
+    <script src="deps/reveal.js"></script>
+    <script src="lib/spotlight.js"></script>
+
+<style>
+</style>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        keyboard: {
+          90: (e) => { console.log(e) },
+        },
+        dependencies: [
+          { src: 'deps/marked.js' },
+          { src: 'deps/markdown.js' },
+          { src: 'deps/notes.js', async: true },
+          { src: 'deps/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        ]
+      });
+
+    </script>
+  </body>
+</html>
