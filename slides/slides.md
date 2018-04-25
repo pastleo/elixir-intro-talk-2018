@@ -257,7 +257,8 @@ end
     * data source is only one big query
 * use `Flow` to utilize all CPUs
 * result speed:
-    * around 86000+ users in 20 minutes
+    * around 86000+ users, each of them has 5 pages in average
+    * 430000+ pages in 20 minutes
 
 ---
 
@@ -302,26 +303,4 @@ end
 
 
 #### Any questions?
-
-<style>
-    .reveal {
-        background: #ecffe4;
-    }
-    .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6, .reveal p, .reveal li {
-        color: #004a1b;
-        cursor: url('https://i.imgur.com/X0BluE8.jpg')
-    }
-    .reveal a { color: #beg005a98; }
-    .reveal img { max-height: 64vh; }
-    .reveal .notes { display: none; }
-    #doc .notes {
-        border: 1px solid #7cf5a4;
-        background: black;
-        color: #7cf5a4;
-        padding: 25px 10px 0px;
-        opacity: 0.8;
-    }
-    
-    .reveal pre { font-size: 0.75em; }
-</style>
 
