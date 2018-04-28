@@ -143,7 +143,7 @@ end
 
 #### why concurrent/parallel is so hard
 
-![race condition](http://i.imgur.com/RWgYIC3.gif)
+![race condition](https://i.imgur.com/RWgYIC3.gif)
 
 [reddit 'Perfect demonstration of a race condition.'](https://www.reddit.com/r/ProgrammerHumor/comments/2skae8/perfect_demonstration_of_a_race_condition/)
 
